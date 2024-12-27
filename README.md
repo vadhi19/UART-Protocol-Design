@@ -20,3 +20,5 @@ Project Contents
 
 3. Simulation Results:
     * Timing diagrams showcasing data transmission and reception.
+
+![image](https://github.com/user-attachments/assets/dd0799ce-4040-4479-99e4-e7c1a12e6da9)
