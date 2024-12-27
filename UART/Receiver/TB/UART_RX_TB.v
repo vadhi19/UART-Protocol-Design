@@ -39,7 +39,7 @@ UART_RX #(.WIDTH(WIDTH)) RX(.clk(clk), .rst(rst), .RX_data(RX_data), .parity_bit
             reset;
             inputs(1'b0); //start bit
             
-            inputs(1'b1); // data bits
+            inputs(1'b0); // data bits
             inputs(1'b1);
             inputs(1'b1);
             inputs(1'b0);
@@ -48,10 +48,10 @@ UART_RX #(.WIDTH(WIDTH)) RX(.clk(clk), .rst(rst), .RX_data(RX_data), .parity_bit
             inputs(1'b1);
             inputs(1'b1);
             
-            inputs(1'b0); //parity_bit
+            inputs(1'b1); //parity_bit
             
             inputs(1'b1); //stop bit
             
-            #100$finish;
+            #200$finish;
          end  
 endmodule

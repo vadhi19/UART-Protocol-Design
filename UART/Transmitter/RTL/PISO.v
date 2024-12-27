@@ -10,7 +10,7 @@ module PISO #(parameter WIDTH = 8)(input clk, rst,
     
     assign data_out = out[0];
             
-    always@(posedge clk, negedge rst)
+    always@(posedge clk or negedge rst)
         begin
             if(!rst)
                 out <= 8'b0;

@@ -7,7 +7,7 @@ module Parity_gen #(parameter WIDTH = 8)(input clk, rst,
                                             
     reg [WIDTH - 1 : 0]parity_bit;
                                             
-    always @(posedge clk, negedge rst)
+    always @(posedge clk or negedge rst)
             begin
                 if(!rst)
                     parity_bit = 1'b0;
